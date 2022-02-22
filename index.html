@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+      integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./img/animal_facts.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Animal Facts</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <h2>Animal-Facts</h2>
+        </a>
+        <div class="nav-item float-end">
+          <a href="https://animalfactsapi.herokuapp.com" class="btn">
+            <i class="bi bi-code-slash"></i> API
+          </a>
+          <a href="https://github.com/LoisaKitakaya/Animal-Facts" class="btn">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- navigation -->
+
+    <!-- body -->
+    <div class="main-body row">
+      <!--  -->
+      <div class="result-container col-8">
+        <!--  -->
+        <div class="card mb-3" id="fact-container">
+          <img
+            src="./img/animals.jpg"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h3 class="card-title">Hey there! Do you like animals?</h3>
+            <p>Well, this is the web application for you!</p>
+            <p class="card-text">
+              It uses the AnimalfactsAPI to display random fun facts about
+              animals.
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="footer">
+          <p>
+            Made with <i class="bi bi-hearts"></i> by
+            <a href="https://github.com/LoisaKitakaya" class="footer-brand">
+              Freedom Loisa
+            </a>
+          </p>
+        </div>
+        <!--  -->
+      </div>
+      <!--  -->
+      <div class="text-center intro col">
+        <hr />
+        <h3>Click the button below to fetch an interesting animal fact!</h3>
+        <!-- <br /> -->
+        <button type="button" id="fetch-fact" class="btn btn-outline-dark">
+          Fetch fact
+        </button>
+        <button class="btn btn-dark" id="loading" type="button" disabled>
+          <span
+            class="spinner-border spinner-border-sm"
+            role="status"
+            aria-hidden="true"
+          ></span>
+          Loading...
+        </button>
+        <br />
+        <hr />
+        <button class="btn btn-sm btn-outline-light" id="menu">Menu</button>
+      </div>
+      <!--  -->
+    </div>
+    <!-- body -->
+  </body>
+  <script src="./js/main.js"></script>
+</html>
